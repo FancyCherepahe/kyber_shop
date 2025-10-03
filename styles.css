@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Julius+Sans+One&display=swap');
+
+*{
+    font-family: 'Julius Sans One';
+    display: flex;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+        /* Desktop - 1 */
+
+background: linear-gradient(90deg, #211240 45%, #0F081F 100%);
+
+display: flex;
+flex-direction: column;
+
+}
+
+main{
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-bar{
+
+box-sizing: border-box;
+
+width: 100%;
+
+background: #27091E;
+border: 1px solid #1D068C;
+
+height: 15%;
+
+display: flex;
+justify-content: center;
+flex-direction: row;
+
+}
+
+.logo-div{
+    margin-right: auto;
+    display: flex;
+
+}
+
+.logo{
+    width: 85px;
+    height: 85px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title-div{
+    color: white;
+    display: flex;
+    gap: 10px;
+}
+
+.colored-title-part{
+    /* Kyber Shop */
+
+    background: linear-gradient(90deg, #2A0D48 0%, #4400FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+
+}
+
+.logo-subtitle{
+
+    color: #696565;
+    margin-top: 0;
+}
+
+.text-title-div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-links{
+    color:white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.main-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.main-image{
+    width: 100%;
+
+    position: relative;
+
+    opacity: 0.6;
+}
+
+.title{
+    /* Forge your destiny */
+
+font-family: 'Julius Sans One';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 70px;
+text-align: center;
+
+color: #FFFFFF;
+
+display: flex;
+
+
+}
+
+.title-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: absolute;
+    bottom:40%;
+    
+}
+
+.colored-title-part-2{
+    /* Forge your destiny */
+
+background: linear-gradient(180deg, #7262B3 0%, #9A8DFD 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-emphasis-color: transparent;
+
+
+}
+
+.main-subtitle{
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+
+.force-learn-div{
+    color: white;
+    position: absolute;
+    /* Rectangle 3 */
+
+    box-sizing: border-box;
+
+    background: linear-gradient(106.74deg, #221B8E 41.75%, #070C34 63.52%);
+    opacity: 0.5;
+    border: 5px solid #0F0630;
+    border-radius: 15px;
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+    text-align: center;
+}
+.hilt-div{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.text-hilt-div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hilt-title{
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hilt-title-2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hilts-div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hilt-image{
+    width: 88px; 
+    height: 203px;
+}
+
+.hilt-images-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    box-sizing: border-box;
+
+    background: linear-gradient(90deg, rgba(14, 6, 59, 0.2) 6.06%, rgba(17, 4, 97, 0.2) 95.34%);
+    border: 4px solid #1B0738;
+    border-radius: 15px;
+
+}
+
+.hilt-info{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kyber-image{
+    width: 118px;
+    height: 213px;
+}
+
+.saber-simulation-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: linear-gradient(90deg, #110330 0%, #0E0320 100%);
+    border: 4px solid #050127;
+    border-radius: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.form-1-image{
+    width: 168px;
+    height: 158px;
+}
+
+.form-2-image{
+    width: 234px;
+    height: 158px;
+}
+
+.forms-title{
+    text-align: center;
+
+    font-weight: lighter;
+}
+
+.forms-images-div{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    background: linear-gradient(90deg, rgba(14, 6, 59, 0.2) 6.06%, rgba(17, 4, 97, 0.2) 95.34%);
+    border: 4px solid #1B0738;
+    border-radius: 15px;
+
+    
+}
+
+.form-images-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-images-div-for-form-7{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
