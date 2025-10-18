@@ -129,6 +129,7 @@ const greenKyber = document.getElementById("green-kyber");
 const purpleKyber = document.getElementById("purple-kyber");
 const yellowKyber = document.getElementById("yellow-kyber");
 const magentaKyber = document.getElementById("magenta-kyber");
+const blackKyber = document.getElementById("footer-logo-easter-egg");
 blueKyber.addEventListener("click", function () {
     lightsaberBlade.style.backgroundColor = "Blue"
     lightsaberBlade.style.boxShadow = "0 0 15px rgb(0, 0, 225), 0 0 10px rgb(0, 0, 225)"
@@ -156,6 +157,12 @@ yellowKyber.addEventListener("click", function () {
 magentaKyber.addEventListener("click", function () {
     lightsaberBlade.style.backgroundColor = "Magenta"
     lightsaberBlade.style.boxShadow = "0 0 15px rgb(255, 0, 225), 0 0 10px rgb(255, 0, 225)"
+    lightsaberBlade.style.opacity = "1"
+    lightsaberBlade.style.visibility = "visible"
+});
+blackKyber.addEventListener("click", function () {
+    lightsaberBlade.style.backgroundImage = "url('images/black_with_dots.jpg')"
+    lightsaberBlade.style.boxShadow = "0 0 15px rgb(255, 255, 225), 0 0 10px rgb(255, 255, 225)"
     lightsaberBlade.style.opacity = "1"
     lightsaberBlade.style.visibility = "visible"
 });

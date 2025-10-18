@@ -22,6 +22,7 @@ flex-direction: column;
 
 margin-left: auto;
 margin-right: auto;
+
 }
 
 main{
@@ -429,6 +430,8 @@ text-emphasis-color: transparent;
 .main-for-saber-simulator{
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-saber-simulator{
@@ -468,20 +471,23 @@ text-emphasis-color: transparent;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    position: relative;
 }
-
-
 
 #lightsaber {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(50px); /* push down slightly to overlap */
+    position: absolute;
+    top: 36%;   
     z-index: 2;
 }
 
 
 #lightsaber-blade {
+    border-radius: 15px;
+
     height: 405px;
     width: 4px;
     transform-origin: bottom center;
@@ -489,6 +495,9 @@ text-emphasis-color: transparent;
     opacity: 0;
     visibility: hidden;
     transition: opacity 5s ease, visibility 5s ease;
+
+    position: absolute;
+    top: 10%;
 }
 
 
@@ -522,7 +531,11 @@ text-emphasis-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-150px); /* pull up to overlap with blade */
+
+    position: absolute;
+    top: 50%;
+    
+    z-index: 1;
 }
 
 
@@ -582,4 +595,64 @@ text-emphasis-color: transparent;
 
 #krystal-choose-div{
     width: 978px;
+}
+
+
+
+.nav-bar-clash-of-the-light{
+    width: 100%;
+    height: 90px;
+
+    background: #27091E;
+    border: 1px solid #1D068C;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    box-sizing: border-box;
+    
+}
+
+.playground-2{
+    /* Rectangle 11 */
+
+    margin-top: 5%;
+
+    box-sizing: border-box;
+
+    width: 986px;
+    height: 734px;
+
+    background: #050416;
+    border: 4px solid #000000;
+    border-radius: 15px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}   
+
+.title-playground-2{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.colored-title-part-playground_2_1{
+    color:blue;
+}
+.colored-title-part-playground_2_2{
+    color:red;
+}
+
+.lightsaber-hilt-game{
+    width: 161px;
+    height: 161px;
+
+    position: absolute;
+    top: 60%
 }
