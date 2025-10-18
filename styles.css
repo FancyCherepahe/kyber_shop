@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Julius+Sans+One&display=swap');
+
+*{
+    font-family: 'Julius Sans One';
+    display: flex;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+
+    width: 100%
+}
+
+body{
+        /* Desktop - 1 */
+
+background: linear-gradient(90deg, #211240 45%, #0F081F 100%);
+
+display: flex;
+flex-direction: column;
+
+margin-left: auto;
+margin-right: auto;
+}
+
+main{
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-bar{
+
+box-sizing: border-box;
+
+width: 100%;
+
+background: #27091E;
+border: 1px solid #1D068C;
+
+height: 15%;
+
+display: flex;
+justify-content: center;
+flex-direction: row;
+
+}
+
+.logo-div{
+    margin-right: auto;
+    display: flex;
+
+}
+
+.logo{
+    width: 85px;
+    height: 85px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: transform 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+.title-div{
+    color: white;
+    display: flex;
+    gap: 10px;
+    font-weight: bolder;
+}
+
+.colored-title-part{
+    /* Kyber Shop */
+
+    background: linear-gradient(90deg, #2A0D48 0%, #4400FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+
+}
+
+.logo-subtitle{
+
+    color: #696565;
+    margin-top: 0;
+}
+
+.text-title-div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-links{
+    color:white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.main-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.main-image{
+    width: 100%;
+
+    position: relative;
+
+    opacity: 0.6;
+}
+
+.title{
+    /* Forge your destiny */
+
+font-family: 'Julius Sans One';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 70px;
+text-align: center;
+
+color: #FFFFFF;
+
+display: flex;
+
+
+}
+
+.title-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: absolute;
+    bottom:40%;
+    
+}
+
+.colored-title-part-2{
+    /* Forge your destiny */
+
+background: linear-gradient(180deg, #7262B3 0%, #9A8DFD 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-emphasis-color: transparent;
+
+
+}
+
+.main-subtitle{
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+
+.force-learn-div{
+    color: white;
+    position: absolute;
+    /* Rectangle 3 */
+
+    box-sizing: border-box;
+
+    background: linear-gradient(106.74deg, #221B8E 41.75%, #070C34 63.52%);
+    opacity: 0.5;
+    border: 5px solid #0F0630;
+    border-radius: 15px;
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+    text-align: center;
+
+    transition: all 0.5s ease, filter 0.5s ease;
+}
+
+.force-learn-div:hover{
+    filter: hue-rotate(60deg) brightness(1.5);
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 0 0 15px #0F0630,
+    0 0 10px #0F0630;
+    
+}
+.hilt-div{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.text-hilt-div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hilt-title{
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hilt-title-2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hilts-div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hilt-image{
+    width: 88px; 
+    height: 203px;
+    transition: transform 0.5s ease ;
+}
+
+.hilt-image:hover{
+    transform: scale(1.1);
+}
+
+.hilt-images-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    box-sizing: border-box;
+
+    background: linear-gradient(90deg, rgba(14, 6, 59, 0.2) 6.06%, rgba(17, 4, 97, 0.2) 95.34%);
+    border: 4px solid #1B0738;
+    border-radius: 15px;
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+.hilt-info{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kyber-image{
+    width: 118px;
+    height: 213px;
+    transition: transform 0.5s ease ;
+}
+
+.kyber-image:hover{
+    transform: scale(1.1);
+}
+
+.saber-simulation-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: linear-gradient(90deg, #110330 0%, #0E0320 100%);
+    border: 4px solid #050127;
+    border-radius: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    padding-left: 1%;
+    padding-right: 1%;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.saber-simulation-div:hover{
+    transform: scale(1.1);
+    filter: hue-rotate(30deg) brightness(1.5);
+}
+
+.button-text{
+    text-decoration: none;
+    color:  white;
+}
+
+.form-1-image{
+    width: 168px;
+    height: 158px;
+}
+
+.form-2-image{
+    width: 234px;
+    height: 158px;
+}
+
+.forms-title{
+    text-align: center;
+
+    font-weight: lighter;
+}
+
+.form-div{
+    transition: transform 0.5s ease;
+}
+
+.form-div:hover{
+    transform: scale(1.1);
+}
+
+.forms-images-div{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    background: linear-gradient(90deg, rgba(14, 6, 59, 0.2) 6.06%, rgba(17, 4, 97, 0.2) 95.34%);
+    border: 4px solid #1B0738;
+    border-radius: 15px;
+
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.form-images-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-images-div-for-form-7{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.clash-of-the-light-button-div{
+    display: flex;
+    flex-direction: column;
+
+    color:white;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.clash-of-the-light-button:hover{
+    transform: scale(1.1);
+    filter: hue-rotate(30deg) brightness(1.5);
+}
+
+.clash-of-the-light-button{ 
+    transition: transform 0.5s ease, filter 0.5s ease;
+    display: flex;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: linear-gradient(90deg, #5109AF 0%, #130431 100%);
+    border: 4px solid #110330;
+    border-radius: 15px;
+
+    margin-bottom: 10%;
+
+    cursor: pointer;
+}
+
+.footer{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    
+    background: linear-gradient(180deg, #1D083C 0%, #0E0320 106.47%);
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 5%;
+
+    align-items: center;
+    text-align: center;
+
+    color: white;
+}
+
+.footer-logo{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-footer-div{
+    font-size: small;
+}
+
+.contacts-text{
+    font-size: smaller;
+}
+
+
+
+.main-for-saber-simulator{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-saber-simulator{
+
+    width: 100%;
+    height: auto;
+
+    background: #27091E;
+    border: 1px solid #1D068C;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    position: relative;
+}
+
+.logo-saber-simulator{
+    width: 85px;
+    height: 85px;
+}
+
+.home-link{
+    color: white;
+    align-items: center;
+    text-decoration: none;
+}
+
+.playground {
+    background: #050416;
+    border-radius: 15px;
+    width: 950px;
+    height: 950px;
+    margin: 5% auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#lightsaber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50px); /* push down slightly to overlap */
+    z-index: 2;
+}
+
+
+#lightsaber-blade {
+    height: 405px;
+    width: 4px;
+    transform-origin: bottom center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 5s ease, visibility 5s ease;
+}
+
+
+
+.lightsaber-div{
+    transition: transform 1s ease-in-out;
+
+    transform-origin: bottom center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.lightsaber-div:hover{
+    transform: rotate(360deg);
+}
+
+.rotate-buttons-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div {
+    background-color: #050416;
+    height: 50px;
+    width: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-150px); /* pull up to overlap with blade */
+}
+
+
+
+.h1{
+    color:white;
+}
+
+.rotate-button-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rotate-button{
+    /* Rectangle 26 */
+
+    background: #4400D8;
+    border: 3px solid #000000;
+    border-radius: 15px;
+
+    color: white;
+
+    width: 54px;
+    height: 28.8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition: all 0.5s ease, transform 0.5s ease;
+}
+
+.rotate-button:hover{
+    transform: scale(1.1);
+    background: #130431;
+    cursor: pointer;
+}
+
+#reset-button{
+    margin-top: 5%;
+    width: 152.6px;
+    height: 43.4px;
+}
+
+.hilt-color{
+    color: white;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#krystal-choose-div{
+    width: 978px;
+}
