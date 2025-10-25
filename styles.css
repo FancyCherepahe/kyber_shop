@@ -3,6 +3,7 @@
 *{
     font-family: 'Julius Sans One';
     display: flex;
+    color: white;
 }
 
 header{
@@ -655,4 +656,67 @@ text-emphasis-color: transparent;
 
     position: absolute;
     top: 60%
+}
+
+.icons{
+    width: 60px;
+    height: 60px;
+}
+
+.header-lightsaber-info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    bottom: 3%;
+}
+
+.lighsaber-image-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    background: linear-gradient(180deg, #1D0475 0%, #090627 100%);
+    border: 1px solid #000000;
+    border-radius: 15px;
+
+    width: 350px;
+    height: 600px;
+
+}
+
+.info-lightsaber-blade{
+    border-radius: 15px;
+
+    height: 405px;
+    width: 4px;
+
+    background-color: white;
+    box-shadow: 0 0 20px white, 0 0 20px white;
+
+    position: absolute;
+    top: 20%;
+}
+
+.info-lightsaber-hilt{
+    position: relative;
+    top:35%;
+}
+
+.darksaber-hilt{
+    transform: rotate(-90deg);
+    width: 200px;
+    height: 200px;
+}
+
+.main-info{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
