@@ -3,6 +3,7 @@
 *{
     font-family: 'Julius Sans One';
     display: flex;
+    color: white;
 }
 
 header{
@@ -655,4 +656,192 @@ text-emphasis-color: transparent;
 
     position: absolute;
     top: 60%
+}
+
+.icons{
+    width: 60px;
+    height: 60px;
+}
+
+.header-lightsaber-info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lighsaber-image-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    background: linear-gradient(180deg, #1D0475 0%, #090627 100%);
+    border: 1px solid #000000;
+    border-radius: 15px;
+
+    width: 450px;
+    height: 600px;
+
+}
+
+.info-lightsaber-blade{
+    border-radius: 15px;
+
+    height: 405px;
+    width: 4px;
+
+    background-color: white;
+    box-shadow: 0 0 20px white, 0 0 20px white;
+
+}
+
+.info-lightsaber-hilt{
+    position: relative;
+    top:35%;
+}
+
+.darksaber-hilt{
+    transform: rotate(-90deg);
+    width: 200px;
+    height: 200px;
+}
+
+.main-info{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.info-lightsaber-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-button-buy{
+    /* Rectangle 7 */
+
+    box-sizing: border-box;
+
+    background: #1A072A;
+    border: 1px solid #000000;
+    border-radius: 15px;
+
+    width: 430px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: larger;
+    
+    cursor: pointer;
+
+}
+
+.info-button-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.item-div{
+    background: #0B0835;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+    height: 400px;
+
+    box-sizing: border-box;
+
+    gap: 20px;
+}
+
+.item-lightsaber-hilt{
+    width: 50px;
+    height: 50px;
+}
+
+#item-lightsaber-blade{
+    border-radius: 15px;
+
+    height: 100px;
+    width: 2px;
+
+    background-color: white;
+    box-shadow: 0 0 20px white, 0 0 20px white;
+
+}
+
+.item-button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-buy-button{
+    /* Rectangle 7 */
+
+    box-sizing: border-box;
+
+    background: #1A072A;
+    border: 1px solid #000000;
+    border-radius: 15px;
+
+    width: 100px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: medium;
+    
+    cursor: pointer;
+
+    position: relative;
+}
+
+.item-lightsaber{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.items-div{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.marketplace-title{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
 }
