@@ -10,20 +10,24 @@
         <div class="header-lightsaber-info header-saber-simulator">
             <img src="images/image 1.png" class="logo-saber-simulator">
             <h1>Lightsaber Marketplace</h1>
-            <img src="images/bin-icon.png" class="icons" alt="bin icon">
-            <img src="images/home-icon.png" class="icons" alt="home icon">
+            <a href="cart-page.html">
+                <img src="images/bin-icon.png" class="icons" alt="bin icon">
+            </a>
+            <a href="marketplace.html">
+                <img src="images/home-icon.png" class="icons" alt="home icon">
+            </a>
         </div>
     </header>
-    <main>
+    <main style="margin-top: 5%;">
         <div class="main-info">
             <div class="lighsaber-image-div">
                 <div class="info-lightsaber-blade"></div>
                 <img src="images/lightsaber-hilt.png" class="info-lightsaber-hilt">
             </div>
             <div class="info-lightsaber-description">
-                <h1>Simple White Lightsaber</h1>
+                <h1>⚪ SIMPLE WHITE LIGHTSABER</h1>
                 <h4 class="description">
-                    ⚪ Simple White Lightsaber
+                    
                     <br>Elegance in its purest form.
 
                     <br>Crafted for those who value clarity
@@ -58,14 +62,21 @@
                         <li>Hilt Material: Brushed durasteel</li>
                         <li>Ideal For: Guardians and seekers</li>
                         <li>Power Core: Kyber crystal calibrated for stability</li>
+                        <li>Combat Form: Versatile for all forms</li>
+                        <li>Price: 500 credits</li>
                     </ul>
                     
                 </h4>
             </div>
         </div>
         <div class="info-button-div">
-            <div class="info-button-buy">Buy</div>
-            <div class="info-button-buy">Add to the cart</div>
+            <button class="info-button-buy" onclick="buyOneItem()">Buy</button>
+            <button class="info-button-buy" onclick="addToCart(
+  'SIMPLE WHITE LIGHTSABER',
+  500,
+  'images/lightsaber-hilt.png',
+  'item-lightsaber-blade'
+)">Add to Cart</button>
         </div>
     </main>
     <footer>
@@ -82,6 +93,7 @@
             </div>        
             <p class="contacts-text">Contact: cherepahe.work@gmail.com</p>
         </div>
+        <script src="script-cart.js"></script>
     </footer>
 </body>
 </html>

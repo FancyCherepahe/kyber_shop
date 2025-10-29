@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/image 1.png">
+</head>
+<body> 
+    <header class="header-lightsaber-info">
+        <div class="header-lightsaber-info header-saber-simulator">
+            <img src="images/image 1.png" class="logo-saber-simulator">
+            <h1>Lightsaber Marketplace</h1>
+            <a href="marketplace.html">
+                <img src="images/home-icon.png" class="icons" alt="home icon">
+            </a>
+        </div>
+    </header>
+    
+    <main style="display: flex; flex-direction: column; align-items: center; margin-top: 2%;">
+        <button class="clear-cart-button info-button-buy" onclick="clearCart()">Clear Cart</button>
+        <h1 class="marketplace-title">Every lightsaber that you have in your cart</h1>
+        <div id="cart-items"></div>
+        <p id="total"></p>
+        <button class="info-button-buy" onclick="buyAll()">Buy all</button>
+    </main>
+    <footer>
+        <div class="footer">
+            <img src="images/image 1.png" class="logo footer-logo">
+            <div class="title-div footer-title-div">
+                <h1 class="colored-title-part">Kyber</h1><h1>Shop</h1>
+            </div>
+            <p>This site was approved by jedi councile </p>
+            <div class="text-footer-div">
+                <p>Use this website to learn the ways of the force abd choose 
+                <br>your destiny by picking hilt and combat form.
+                <br>May the force be with you!</p>
+            </div>        
+            <p class="contacts-text">Contact: cherepahe.work@gmail.com</p>
+        </div>
+        <script src="script-cart.js"></script>
+    </footer>
+</body>
+</html>

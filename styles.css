@@ -661,6 +661,9 @@ text-emphasis-color: transparent;
 .icons{
     width: 60px;
     height: 60px;
+     position: relative;
+  z-index: 10;
+
 }
 
 .header-lightsaber-info{
@@ -686,6 +689,25 @@ text-emphasis-color: transparent;
     width: 450px;
     height: 600px;
 
+    transition: transform 0.5s ease;
+}
+
+.lighsaber-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    width: 450px;
+    height: 600px;
+
+    transition: transform 0.5s ease;
+}
+
+.lighsaber-image:hover{
+    transform: scale(1.1) rotateZ(-5deg);
 }
 
 .info-lightsaber-blade{
@@ -699,9 +721,34 @@ text-emphasis-color: transparent;
 
 }
 
+.info-lightsaber-blade-2{
+    background-color: blue;
+    box-shadow: 0 0 20px blue, 0 0 20px blue;
+}
+
+.info-lightsaber-blade-3{
+    background-color: green;
+    box-shadow: 0 0 10px green, 0 0 10px green;
+}
+
+.info-lightsaber-blade-4{
+    background-color: rgb(100, 32, 140);
+    box-shadow: 0 0 20px rgb(100, 32, 140), 0 0 20px rgb(100, 32, 140);
+}
+
+.info-lightsaber-blade-5{
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow, 0 0 20px yellow;
+}
+
+.info-lightsaber-blade-6{
+    background-color: magenta;
+    box-shadow: 0 0 20px magenta, 0 0 20px magenta;
+}
+
 .info-lightsaber-hilt{
     position: relative;
-    top:35%;
+    bottom:2%;
 }
 
 .darksaber-hilt{
@@ -755,12 +802,21 @@ ul{
     font-size: larger;
     
     cursor: pointer;
+    
+    transition: all 0.5s ease, transform 0.5s ease;
+}
 
+.info-button-buy:hover{
+    transform: scale(1.1);
+    background: #190348;
 }
 
 .info-button-div{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+
+    margin-top: 5%;
 }
 
 .item-div{
@@ -796,6 +852,61 @@ ul{
 
 }
 
+#item-lightsaber-blade-1{
+    border-radius: 15px;
+
+    height: 100px;
+    width: 2px;
+
+    background-color: blue;
+    box-shadow: 0 0 20px blue, 0 0 20px blue;
+
+}
+
+#item-lightsaber-blade-2{
+    border-radius: 15px;
+
+    height: 100px;
+    width: 2px;
+
+    background-color: green;
+    box-shadow: 0 0 10px green, 0 0 10px green;
+
+}
+
+#item-lightsaber-blade-3{
+    border-radius: 15px;
+
+    height: 100px;
+    width: 2px;
+
+    background-color: rgb(100, 32, 140);
+    box-shadow: 0 0 20px rgb(100, 32, 140), 0 0 20px rgb(100, 32, 140);
+
+}
+
+#item-lightsaber-blade-4{
+    border-radius: 15px;
+
+    height: 100px;
+    width: 2px;
+
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow, 0 0 20px yellow;
+
+}
+
+#item-lightsaber-blade-5{
+    border-radius: 15px;
+
+    height: 100px;
+    width: 2px;
+
+    background-color: magenta;
+    box-shadow: 0 0 20px magenta, 0 0 20px magenta;
+
+}
+
 .item-button-div{
     display: flex;
     justify-content: center;
@@ -824,6 +935,8 @@ ul{
     cursor: pointer;
 
     position: relative;
+
+    text-decoration: none;
 }
 
 .item-lightsaber{
@@ -844,4 +957,32 @@ ul{
     margin-left: auto;
     margin-right: auto;
     margin-top: 3%;
+}
+
+.clear-cart-button{
+    width: 200px;
+}
+
+#cart-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.marketplace-button{
+    text-decoration: none;
+    color: white;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.marketplace-button-buy-animation{
+    transition: transform 0.5s ease;
+}
+
+.marketplace-button-buy-animation:hover{
+    transform: scale(1.1);
 }
