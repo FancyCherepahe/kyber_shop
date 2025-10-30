@@ -15,14 +15,14 @@ header{
 html, body{
         /* Desktop - 1 */
 
-background: #211240;
-display: flex;
-flex-direction: column;
+    background: #211240;
+    display: flex;
+    flex-direction: column;
 
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 
-height:100%
+    height:100%
 
 }
 
@@ -36,18 +36,18 @@ main{
 
 .nav-bar{
 
-box-sizing: border-box;
+    box-sizing: border-box;
 
-width: 100%;
+    width: 100%;
 
-background: #27091E;
-border: 1px solid #1D068C;
+    background: #27091E;
+    border: 1px solid #1D068C;
 
-height: 15%;
+    height: 15%;
 
-display: flex;
-justify-content: center;
-flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 
 }
 
@@ -110,6 +110,7 @@ flex-direction: row;
     align-items: center;
     justify-content: space-around;
     gap: 50px;
+    margin: 10px;
 }
 
 .main-title{
@@ -156,19 +157,18 @@ display: flex;
     align-items: center;
     flex-direction: column;
 
-
+    margin-bottom: 5%;
     
 }
 
 .colored-title-part-2{
     /* Forge your destiny */
 
-background: linear-gradient(180deg, #7262B3 0%, #9A8DFD 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-emphasis-color: transparent;
-
+    background: linear-gradient(180deg, #7262B3 0%, #9A8DFD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
 
 }
 
@@ -409,6 +409,7 @@ text-emphasis-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     background: linear-gradient(180deg, #1D083C 0%, #0E0320 106.47%);
 
@@ -419,8 +420,6 @@ text-emphasis-color: transparent;
     text-align: center;
 
     color: white;
-
-    padding: 20px;
     
 }
 
@@ -468,8 +467,13 @@ text-emphasis-color: transparent;
 
 .home-link{
     color: white;
-    align-items: center;
     text-decoration: none;
+    
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
 
 .playground {
@@ -570,8 +574,8 @@ text-emphasis-color: transparent;
 
     color: white;
 
-    width: 54px;
-    height: 28.8px;
+    width: 80px;
+    height: 40px;
 
     display: flex;
     align-items: center;
@@ -829,6 +833,7 @@ ul{
     justify-content: space-evenly;
 
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .item-div{
@@ -989,6 +994,7 @@ ul{
 
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5%;
 }
 
 .marketplace-button-buy-animation{
@@ -1021,3 +1027,4 @@ ul{
         bottom:80%;
     }
 }
+
