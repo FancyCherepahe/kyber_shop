@@ -13,16 +13,17 @@ header{
     width: 100%
 }
 
-body{
+html, body{
         /* Desktop - 1 */
 
-background: linear-gradient(90deg, #211240 45%, #0F081F 100%);
-
+background: #211240;
 display: flex;
 flex-direction: column;
 
 margin-left: auto;
 margin-right: auto;
+
+height:100%
 
 }
 
@@ -30,6 +31,7 @@ main{
     
     display: flex;
     flex-direction: column;
+    flex: 1;
 
 }
 
@@ -74,6 +76,8 @@ flex-direction: row;
     display: flex;
     gap: 10px;
     font-weight: bolder;
+    margin: 0;
+    
 }
 
 .colored-title-part{
@@ -84,6 +88,7 @@ flex-direction: row;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-emphasis-color: transparent;
+    margin-bottom: 0;
 
 }
 
@@ -96,7 +101,7 @@ flex-direction: row;
 .text-title-div{
     display: flex;
     flex-direction: column;
-
+    height: auto;
 }
 
 .nav-links{
@@ -113,6 +118,12 @@ flex-direction: row;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    
     
 }
 
@@ -146,8 +157,7 @@ display: flex;
     align-items: center;
     flex-direction: column;
 
-    position: absolute;
-    bottom:40%;
+
     
 }
 
@@ -171,7 +181,7 @@ text-emphasis-color: transparent;
 
 .force-learn-div{
     color: white;
-    position: absolute;
+   
     /* Rectangle 3 */
 
     box-sizing: border-box;
@@ -309,7 +319,7 @@ text-emphasis-color: transparent;
 
 .button-text{
     text-decoration: none;
-    color:  white;
+    color:white;
 }
 
 .form-1-image{
@@ -399,18 +409,20 @@ text-emphasis-color: transparent;
 
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+
     background: linear-gradient(180deg, #1D083C 0%, #0E0320 106.47%);
 
     margin-left: auto;
     margin-right: auto;
 
-    margin-top: 5%;
-
     align-items: center;
     text-align: center;
 
     color: white;
+
+    padding: 20px;
+    
 }
 
 .footer-logo{
@@ -586,6 +598,7 @@ text-emphasis-color: transparent;
     
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3%;
 
     display: flex;
     flex-direction: column;
@@ -985,4 +998,27 @@ ul{
 
 .marketplace-button-buy-animation:hover{
     transform: scale(1.1);
+}
+
+
+@media (min-width: 300px) and (max-width: 860px) {
+    .main-subtitle{
+        display: none;
+    }
+    .force-learn-div{
+        display: none;
+    }
+    
+}
+
+@media (min-width:800px) and (max-width:860px){
+    .title-text{
+        bottom:65%;
+    }
+}
+
+@media (min-height:2000px) {
+    .title-text{
+        bottom:80%;
+    }
 }
