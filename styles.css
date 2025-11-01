@@ -118,12 +118,14 @@ main{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    
     background-image: url(images/background.jpg);
     background-size: cover;
     background-position: center;
+    background-color: rgba(0,0,0,0.5);
+
     height: 600px;
     width: 100%;
-    
     
 }
 
@@ -206,12 +208,24 @@ display: flex;
     0 0 10px #0F0630;
     
 }
-.hilt-div{
-    margin-left: auto;
-    margin-right: auto;
+
+.index-main{
     display: flex;
     flex-direction: column;
 
+    margin-left: auto;
+    margin-right: auto;
+
+    gap: 50px;
+}
+
+
+.hilt-div{
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -238,10 +252,13 @@ display: flex;
 
 .hilts-div{
     color: white;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin: 10px;
 }
 
 .hilt-image{
@@ -265,9 +282,12 @@ display: flex;
     border: 4px solid #1B0738;
     border-radius: 15px;
 
-    padding-left: 2%;
-    padding-right: 2%;
+}
 
+.hilt-divs{
+    text-wrap: nowrap;
+
+    gap: 50px;  
 }
 
 .hilt-info{
@@ -339,6 +359,8 @@ display: flex;
 
 .form-div{
     transition: transform 0.5s ease;
+
+    margin: 10px;
 }
 
 .form-div:hover{
@@ -554,8 +576,6 @@ display: flex;
     z-index: 1;
 }
 
-
-
 .h1{
     color:white;
 }
@@ -667,11 +687,13 @@ display: flex;
 }
 
 .lightsaber-hilt-game{
-    width: 161px;
-    height: 161px;
+    width: 130px;
+    height: 130px;
 
     position: absolute;
     top: 60%
+    
+
 }
 
 .icons{
@@ -965,9 +987,13 @@ ul{
 
 .items-div{
     display: flex;
-    gap: 20px;
     justify-content: center;
+    
     margin-top: 5%;
+    margin-bottom: 5%;
+    
+    gap: 20px;
+
 }
 
 .marketplace-title{
@@ -1028,3 +1054,68 @@ ul{
     }
 }
 
+.hilt-subtitle{
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+}
+
+.hilt-subtitle:hover{
+    opacity: 1;
+}
+
+.lightsaber-game-1{
+    position: absolute;
+    left: 10%;
+    top: 60%;
+}
+.lightsaber-game-2{
+    position: absolute;
+    right: 20%;
+    top: 60%;
+}
+
+.health-bar-1{
+    position: absolute;
+    top: 80%;
+    left: 7%;
+
+    text-align: center;
+}
+.health-bar-2{
+    position: absolute;
+    top: 80%;
+    right: 2%;
+
+    text-align: center;
+}
+
+.health-bar-fill-1{
+    width: 200px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.health-bar-fill-2{
+    width: 200px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.game-lightsaber-blade{
+    border-radius: 15px;
+
+    height: 300px;
+    width: 4px;
+    transform-origin: bottom center;
+
+    opacity: 1;
+    visibility: visible;
+
+    position: absolute;
+    bottom: 20%;
+    
+
+    background-color: blue;
+}
