@@ -6,65 +6,87 @@ const yourLightsaberBlade = document.querySelector(".lightsaber-game-1");
 
 const enemyHealthBar = document.querySelector('.health-bar-fill-2');
 
+let enemyHealthBarWidth = 200;
+
+let gameRunning = true;
+
 function startGame() {
     enemyMoveDisplayDiv.style.display = 'flex';
-    enemyLightsaberBlade.style.animationName = 'none';
-    enemyMoveText.textContent = 'Enemy will Attack!';
-    enemyLightsaberBlade.style.animationName = 'swing';
-    enemyLightsaberBlade.style.animationDuration = '1.5s';
-    setTimeout(() => {
-        enemyLightsaberBlade.style.animationName = 'none';
-        enemyLightsaberBlade.style.animationDuration = '2s';
-    }, 2000);
+    const healthBar1 = document.querySelector('.health-bar-fill-2'); // Enemy
+    const healthBar2 = document.querySelector('.health-bar-fill-1'); // Player
+    const enemyMoveText = document.getElementById('enemy-move-text');
+    const enemyLightsaberBlade = document.querySelector('.lightsaber-game-2');
+    const yourLightsaberBlade = document.querySelector('.lightsaber-game-1');
 
-    let randomNumber1
+    function getHealthWidth(bar) {
+        return parseInt(window.getComputedStyle(bar).width);
+    }
 
-    setTimeout(() => {
-        const randomNumber1 = Math.floor(Math.random() * 2) + 1;
-        return randomNumber1;
-    }, 2000);
-    const enemyHealthBarWidth = 200;
-    
-    function getRandomNumber() {
-    if (randomNumber === 1) {
-        enemyMoveText.textContent = 'Enemy will Attack!';
-        enemyLightsaberBlade.style.animationName = 'swing';
-        enemyLightsaberBlade.style.animationDuration = '1.5s';
+    function enemyAction() {
+        const random = Math.floor(Math.random() * 3); // 0 = idle, 1 = attack, 2 = defend
+
+        if (random === 1) {
+            enemyMoveText.textContent = 'Enemy will Attack!';
+            enemyLightsaberBlade.style.animationName = 'swing';
+            enemyLightsaberBlade.style.animationDuration = '1.5s';
+
+            const currentWidth = getHealthWidth(healthBar2);
+            const newWidth = Math.max(currentWidth - 15, 0);
+            healthBar2.style.width = newWidth + 'px';
+
+        } else if (random === 2) {
+            enemyMoveText.textContent = 'Enemy will Defend!';
+            enemyLightsaberBlade.style.animationName = 'defend';
+            enemyLightsaberBlade.style.animationDuration = '1.5s';
+        } else {
+            enemyMoveText.textContent = 'Enemy is idle...';
+            enemyLightsaberBlade.style.animationName = 'none';
+        }
+
         setTimeout(() => {
             enemyLightsaberBlade.style.animationName = 'none';
-            enemyLightsaberBlade.style.animationDuration = '2s';
-        }, 2000);
+        }, 1000);
     }
-    else {
-        enemyMoveText.textContent = 'Enemy will Defend!';
-        enemyLightsaberBlade.style.animationName = 'defend';
-        setTimeout(() => {
-            enemyLightsaberBlade.style.animationName = 'none';
-        }, 2000);
-    }
-    
-    getRandomNumber();
 
+    function loopGame() {
+        const width1 = getHealthWidth(healthBar1);
+        const width2 = getHealthWidth(healthBar2);
+
+        if (width1 > 0 && width2 > 0 && gameRunning) {
+            enemyAction();
+            setTimeout(loopGame, 1000);
+        } else {
+            enemyMoveText.textContent = 'Game Over!';
+            gameRunning = false;
+        }
     }
-    function attack() {
+
+    loopGame();
+
+    // Make attack/block globally accessible
+    window.attack = function () {
+        if (!gameRunning) return;
+
         yourLightsaberBlade.style.animationName = 'yourSwing';
-        enemyHealthBar.style.width = (enemyHealthBarWidth - 20) + 'px';
+        yourLightsaberBlade.style.animationDuration = '1.5s';
+
+        const currentWidth = getHealthWidth(healthBar1);
+        const newWidth = Math.max(currentWidth - 20, 0);
+        healthBar1.style.width = newWidth + 'px';
+
         setTimeout(() => {
             yourLightsaberBlade.style.animationName = 'none';
-        }, 2000);
-        return enemyHealthBarWidth - 20;
-        
-    }
-    function block() {
+        }, 1000);
+    };
+
+    window.block = function () {
+        if (!gameRunning) return;
+
         yourLightsaberBlade.style.animationName = 'yourBlock';
         yourLightsaberBlade.style.animationDuration = '1.5s';
+
         setTimeout(() => {
             yourLightsaberBlade.style.animationName = 'none';
-            yourLightsaberBlade.style.animationDuration = '2s';
-        }, 2000);
-    }    
+        }, 1000);
+    };
 }
-
-
-    
-

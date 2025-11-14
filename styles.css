@@ -802,6 +802,8 @@ display: flex;
     display: flex;
     flex-direction: row;
     gap: 50px;
+    
+    margin-top: 5%;
 }
 
 .info-lightsaber-description{
@@ -871,7 +873,7 @@ ul{
     align-items: center;
 
     width: 300px;
-    height: 400px;
+    height: auto;
 
     box-sizing: border-box;
 
@@ -965,8 +967,7 @@ ul{
     border: 1px solid #000000;
     border-radius: 15px;
 
-    width: 100px;
-    height: 50px;
+    
 
     display: flex;
     justify-content: center;
@@ -979,6 +980,8 @@ ul{
     position: relative;
 
     text-decoration: none;
+
+    padding: 10px;
 }
 
 .item-lightsaber{
@@ -991,11 +994,12 @@ ul{
 .items-div{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     
     margin-top: 5%;
     margin-bottom: 5%;
     
-    gap: 20px;
+    gap: 50px;
 
 }
 
@@ -1024,6 +1028,12 @@ ul{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
+
+    background-color: purple;
+    padding: 10px;
+    
+    border-radius: 15px;
+    border: #000000 2px solid;
 }
 
 .marketplace-button-buy-animation{
