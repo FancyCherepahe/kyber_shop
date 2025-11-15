@@ -1,4 +1,9 @@
-
+const addToCart = (name, price, image, bladeId) => {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  cart.push({ name, price, hiltImage: image, bladeId });
+  localStorage.setItem('cart', JSON.stringify(cart));
+  alert(`${name} added to cart!`);
+}
 
 function showOnMarket() {
   const marketContainer = document.getElementById('market-items');
@@ -34,7 +39,14 @@ function showOnMarket() {
     addButton.className = 'marketplace-button-buy-animation marketplace-button';
     addButton.textContent = 'Buy';
     addButton.onclick = function () {
-      addToCart(saber.name, saber.price, saber.image, saber.bladeId);
+       alert("Sorry, you cannot buy item because you are too far from Coruscant.");
+    };
+
+    const addCartButton = document.createElement('button');
+    addCartButton.className = 'marketplace-button-add-cart-animation marketplace-button';
+    addCartButton.textContent = 'Add to Cart';
+    addCartButton.onclick = function () {
+      addToCart(saber.name, saber.price, saber.div, saber.bladeId);
     };
 
     itemDiv.appendChild(title);
@@ -42,6 +54,7 @@ function showOnMarket() {
     itemDiv.appendChild(price);
     itemDiv.appendChild(infoLink);
     itemDiv.appendChild(addButton);
+    itemDiv.appendChild(addCartButton);
     marketContainer.appendChild(itemDiv);
   });
 }
