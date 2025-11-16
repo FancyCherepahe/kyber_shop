@@ -1037,11 +1037,13 @@ ul{
 }
 
 .marketplace-button-buy-animation{
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+    cursor: pointer;
 }
 
 .marketplace-button-buy-animation:hover{
     transform: scale(1.1);
+    background-color: #190348;
 }
 
 
@@ -1259,4 +1261,12 @@ ul{
     justify-content: center;
 
     display: none;
+}
+
+.marketplace-buttons-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 10px;
 }

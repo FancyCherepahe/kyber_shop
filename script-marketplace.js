@@ -33,7 +33,7 @@ function showOnMarket() {
     const infoLink = document.createElement('a');
     infoLink.href = `main-lightsaber-info.html?id=${index}`;
     infoLink.textContent = 'View Details';
-    infoLink.className = 'item-buy-button';
+    infoLink.className = 'marketplace-button-buy-animation item-buy-button';
 
     const addButton = document.createElement('button');
     addButton.className = 'marketplace-button-buy-animation marketplace-button';
@@ -43,18 +43,22 @@ function showOnMarket() {
     };
 
     const addCartButton = document.createElement('button');
-    addCartButton.className = 'marketplace-button-add-cart-animation marketplace-button';
+    addCartButton.className = 'marketplace-button-buy-animation marketplace-button';
     addCartButton.textContent = 'Add to Cart';
     addCartButton.onclick = function () {
-      addToCart(saber.name, saber.price, saber.div, saber.bladeId);
+      addToCart(saber.name, saber.price, 'images/lightsaber-hilt.png' , saber.bladeId);
     };
+
+    const buttonsDiv = document.createElement('div');
+    buttonsDiv.className = 'marketplace-buttons-div';
+    buttonsDiv.appendChild(addButton);
+    buttonsDiv.appendChild(addCartButton);    
 
     itemDiv.appendChild(title);
     itemDiv.appendChild(saberDiv);
     itemDiv.appendChild(price);
     itemDiv.appendChild(infoLink);
-    itemDiv.appendChild(addButton);
-    itemDiv.appendChild(addCartButton);
+    itemDiv.appendChild(buttonsDiv);
     marketContainer.appendChild(itemDiv);
   });
 }
