@@ -1302,6 +1302,8 @@ ul{
     width: 350px;
     height: 600px;
 
+    position: relative;
+
 }
 
 .info-lightsaber-blade{
@@ -1318,8 +1320,8 @@ ul{
 }
 
 .info-lightsaber-hilt{
-    position: relative;
-    top:35%;
+    position: absolute;
+
 }
 
 .darksaber-hilt{

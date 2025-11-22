@@ -22,6 +22,8 @@ function startGame() {
         return parseInt(window.getComputedStyle(bar).width);
     }
 
+    let cooldown = true;
+
     function enemyAction() {
         const random = Math.floor(Math.random() * 3); // 0 = idle, 1 = attack, 2 = defend
 
@@ -77,6 +79,10 @@ function startGame() {
         setTimeout(() => {
             yourLightsaberBlade.style.animationName = 'none';
         }, 1000);
+
+        setTimeout(() => {
+            cooldown = true;
+        }, 1000);
     };
 
     window.block = function () {
@@ -87,6 +93,10 @@ function startGame() {
 
         setTimeout(() => {
             yourLightsaberBlade.style.animationName = 'none';
+        }, 1000);
+
+        setTimeout(() => {
+            cooldown = true;
         }, 1000);
     };
 }
