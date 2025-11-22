@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/image_1.png">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZN7S4S808S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZN7S4S808S');
+  </script>
+</head>
+<body>
+    <header class="header-lightsaber-info">
+        <div class="header-lightsaber-info header-saber-simulator">
+            <img src="images/image 1.png" class="logo-saber-simulator">
+            <h1>Lightsaber Marketplace</h1>
+            <a href="cart-page.html">
+                <img src="images/bin-icon.png" class="icons" alt="bin icon">
+            </a>
+            <a href="marketplace.html">
+                <img src="images/home-icon.png" class="icons" alt="home icon">
+            </a>
+        </div>
+    </header>
+    <main style="margin-top: 5%;">
+        <div class="main-info">
+            <div class="lighsaber-image-div">
+                <div class="info-lightsaber-blade-4 info-lightsaber-blade"></div>
+                <img src="images/lightsaber-hilt.png" class="info-lightsaber-hilt">
+            </div>
+            <div class="info-lightsaber-description">
+                <h1>🟣 AMETHYST BALANCE SABER</h1>
+                <h4 class="description">
+                    <br>Mystery meets mastery.
+                    
+                    <br>Rare and commanding, this purple saber is favored by Jedi who walk the 
+                    
+                    <br>line between light and dark. Its deep glow reflects inner strength and emotional control. 
+                    
+                    <br>Ideal for wielders of Form VII: Vaapad, a style that channels intense emotion into focused combat. 
+                    
+                    <br>This saber is not for the faint-hearted — it demands discipline, clarity, and conviction.
+
+                    <ul>
+                        <br>Specifications:
+                        <li>Length: 37 inches</li>
+                        <li>Weight: 1.25 lbs</li>
+                        <li>Activation: Push-button ignition</li>
+                        <li>Sound: Push ignition with echo modulation</li>
+                        <li>Blade Color: Purple</li>
+                        <li>Hilt Material: Matte durasteel with violet shimmer coating</li>
+                        <li>Ideal For: Great warriors of the order</li>
+                        <li>Power Core: Kyber crystal attuned to mystic frequency</li>
+                        <li>Combat Form: Form VII – Vaapad (Intense, emotional, high-risk mastery)</li>
+                        <li>Price: 700 credits</li>
+                    </ul>
+                    
+                </h4>
+            </div>
+        </div>
+        <div class="info-button-div">
+            <button class="info-button-buy" onclick="buyOneItem()">Buy</button>
+            <button class="info-button-buy" onclick="addToCart(
+  'AMETHYST BALANCE SABER',
+  700,
+  'images/lightsaber-hilt.png',
+  'item-lightsaber-blade-3'
+)">Add to Cart</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <img src="images/image 1.png" class="logo footer-logo">
+            <div class="title-div footer-title-div">
+                <h1 class="colored-title-part">Kyber</h1><h1>Shop</h1>
+            </div>
+            <p>This site was approved by jedi councile </p>
+            <div class="text-footer-div">
+                <p>Use this website to learn the ways of the force abd choose 
+                <br>your destiny by picking hilt and combat form.
+                <br>May the force be with you!</p>
+            </div>        
+            <p class="contacts-text">Contact: cherepahe.work@gmail.com</p>
+        </div>
+        <script src="script-cart.js"></script>
+    </footer>
+</body>
+</html>
