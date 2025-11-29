@@ -3,6 +3,7 @@
 *{
     font-family: 'Julius Sans One';
     display: flex;
+    color: white;
 }
 
 header{
@@ -1112,6 +1113,9 @@ ul{
     left: 7%;
 
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
 }
 .health-bar-2{
     position: absolute;
@@ -1119,6 +1123,9 @@ ul{
     right: 2%;
 
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .health-bar-fill-1{

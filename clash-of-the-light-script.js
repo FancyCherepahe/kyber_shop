@@ -75,17 +75,19 @@ function startGame() {
         const currentWidth = getHealthWidth(healthBar1);
         const newWidth = Math.max(currentWidth - 20, 0);
         healthBar1.style.width = newWidth + 'px';
-
-        setTimeout(() => {
-            yourLightsaberBlade.style.animationName = 'none';
-        }, 1000);
-
+        
         setTimeout(() => {
             cooldown = true;
         }, 1000);
+        
+         setTimeout(() => {
+            yourLightsaberBlade.style.animationName = 'none';
+        }, 1000);
+
+        
     };
 
-    window.block = function () {
+    window.defent = function () {
         if (!gameRunning) return;
 
         yourLightsaberBlade.style.animationName = 'yourBlock';
