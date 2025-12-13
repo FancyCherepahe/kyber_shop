@@ -329,6 +329,10 @@ display: flex;
     cursor: pointer;
 
     transition: transform 0.5s ease, filter 0.5s ease;
+
+    width: fit-content;
+
+    text-decoration: none;
 }
 
 .saber-simulation-div:hover{
@@ -1269,4 +1273,9 @@ ul{
     align-items: center;
     flex-direction: column-reverse;
     gap: 10px;
+}
+
+.view-details-button{
+    margin: 0;
+    
 }

@@ -33,7 +33,7 @@ function showOnMarket() {
     const infoLink = document.createElement('a');
     infoLink.href = `main-lightsaber-info.html?id=${index}`;
     infoLink.textContent = 'View Details';
-    infoLink.className = 'marketplace-button-buy-animation item-buy-button';
+    infoLink.className = 'marketplace-button-buy-animation marketplace-button view-details-button';
 
     const addButton = document.createElement('button');
     addButton.className = 'marketplace-button-buy-animation marketplace-button';
@@ -52,7 +52,7 @@ function showOnMarket() {
     const buttonsDiv = document.createElement('div');
     buttonsDiv.className = 'marketplace-buttons-div';
     buttonsDiv.appendChild(addButton);
-    buttonsDiv.appendChild(addCartButton);    
+    buttonsDiv.appendChild(addCartButton); 
 
     itemDiv.appendChild(title);
     itemDiv.appendChild(saberDiv);

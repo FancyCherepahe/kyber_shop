@@ -17,6 +17,9 @@ function startGame() {
     const enemyMoveText = document.getElementById('enemy-move-text');
     const enemyLightsaberBlade = document.querySelector('.lightsaber-game-2');
     const yourLightsaberBlade = document.querySelector('.lightsaber-game-1');
+    const attackButton = document.getElementById('attack-button');
+    const defendButton = document.getElementById('defend-button');
+
 
     function getHealthWidth(bar) {
         return parseInt(window.getComputedStyle(bar).width);
@@ -67,6 +70,9 @@ function startGame() {
     window.attack = function () {
         if (!gameRunning) return;
 
+        attackButton.disabled = true;
+        defendButton.disabled = true;
+
         yourLightsaberBlade.style.animationName = 'yourSwing';
         yourLightsaberBlade.style.animationDuration = '1s';
 
@@ -76,17 +82,24 @@ function startGame() {
 
         setTimeout(() => {
             yourLightsaberBlade.style.animationName = 'none';
+            attackButton.disabled = false;
+            defendButton.disabled = false;
         }, 1000);
     };
 
     window.defend = function () {
         if (!gameRunning) return;
 
+        attackButton.disabled = true;
+        defendButton.disabled = true;
+
         yourLightsaberBlade.style.animationName = 'yourBlock';
         yourLightsaberBlade.style.animationDuration = '1s';
 
         setTimeout(() => {
             yourLightsaberBlade.style.animationName = 'none';
+            attackButton.disabled = false;
+            defendButton.disabled = false;
         }, 1000);
     };
 }
