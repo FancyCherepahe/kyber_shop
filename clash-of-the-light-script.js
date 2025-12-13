@@ -28,7 +28,7 @@ function startGame() {
         if (random === 1) {
             enemyMoveText.textContent = 'Enemy will Attack!';
             enemyLightsaberBlade.style.animationName = 'swing';
-            enemyLightsaberBlade.style.animationDuration = '1.5s';
+            enemyLightsaberBlade.style.animationDuration = '1s';
 
             const currentWidth = getHealthWidth(healthBar2);
             const newWidth = Math.max(currentWidth - 15, 0);
@@ -37,7 +37,7 @@ function startGame() {
         } else if (random === 2) {
             enemyMoveText.textContent = 'Enemy will Defend!';
             enemyLightsaberBlade.style.animationName = 'defend';
-            enemyLightsaberBlade.style.animationDuration = '1.5s';
+            enemyLightsaberBlade.style.animationDuration = '1s';
         } else {
             enemyMoveText.textContent = 'Enemy is idle...';
             enemyLightsaberBlade.style.animationName = 'none';
@@ -68,7 +68,7 @@ function startGame() {
         if (!gameRunning) return;
 
         yourLightsaberBlade.style.animationName = 'yourSwing';
-        yourLightsaberBlade.style.animationDuration = '1.5s';
+        yourLightsaberBlade.style.animationDuration = '1s';
 
         const currentWidth = getHealthWidth(healthBar1);
         const newWidth = Math.max(currentWidth - 20, 0);
@@ -79,11 +79,11 @@ function startGame() {
         }, 1000);
     };
 
-    window.block = function () {
+    window.defend = function () {
         if (!gameRunning) return;
 
         yourLightsaberBlade.style.animationName = 'yourBlock';
-        yourLightsaberBlade.style.animationDuration = '1.5s';
+        yourLightsaberBlade.style.animationDuration = '1s';
 
         setTimeout(() => {
             yourLightsaberBlade.style.animationName = 'none';

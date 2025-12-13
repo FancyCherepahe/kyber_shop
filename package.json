@@ -18,6 +18,7 @@
   "homepage": "https://github.com/FancyCherepahe/kyber_shop_2#readme",
   "description": "",
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "express": "^5.1.0"
   }
 }
